@@ -27,7 +27,10 @@ button:hover,
 .social-media:hover,
 .about-img:hover,
 .grid-img:hover,
-.destination:hover {
+.destination:hover,
+.input:hover,
+.category-opt:hover,
+.city-opt:hover {
   cursor: pointer;
 }
 
@@ -61,6 +64,8 @@ button:hover,
 .nav-flex > li,
 .location-dropdown > ul,
 .location-dropdown-opt,
+.category-opt,
+.city-opt,
 .about-top,
 .about-bottom,
 .page-footer {
@@ -93,6 +98,7 @@ button:hover,
 }
 
 .location-dropdown,
+.option-dropdown,
 .trip-search,
 .destinations {
   position: absolute;
@@ -293,28 +299,51 @@ button:hover,
   font-weight: 500;
 }
 
-.location-dropdown {
+/* Drop down styling */
+
+.dropdown,
+.search-dropdown {
+  position: relative;
+}
+
+.location-dropdown,
+.option-dropdown {
   display: none;
   width: 200px;
   height: 200px;
-  top: 100px;
+  top: 75px;
+  left: -32.5px;
   animation: dropdown 0.25s linear;
 }
 
-.dropdown:hover > .location-dropdown {
+.location-dropdown {
+  top: 75px;
+}
+
+.option-dropdown {
+  top: 40px;
+}
+
+.dropdown:hover > .location-dropdown,
+.search-dropdown:hover > .option-dropdown {
   display: block;
 }
 
-.location-dropdown > ul {
+.location-dropdown > ul,
+.option-dropdown > ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: white;
-  opacity: 0.7;
   border-radius: 10px;
 }
 
-.location-dropdown > ul > li {
+.location-dropdown > ul {
+  opacity: 0.7;
+}
+
+.location-dropdown > ul > li,
+.option-dropdown > ul > li {
   height: 50px;
   width: 200px;
   text-align: center;
@@ -322,17 +351,21 @@ button:hover,
   transition: background-color 0.15s linear;
 }
 
-.location-dropdown > ul > li:hover {
+.location-dropdown > ul > li:hover,
+.option-dropdown > ul > li:hover {
   background-color: #ebebeb;
 }
 
-.location-dropdown-opt {
+.location-dropdown-opt,
+.category-opt,
+.city-opt {
   justify-content: center;
   color: #342f2f;
   height: 50px;
   width: 200px;
 }
 
+/* Sign In style */
 .sign-in-btn {
   padding: 15px 40px;
   border-radius: 50px;
@@ -346,7 +379,8 @@ button:hover,
   justify-self: start;
 }
 
-.sign-in-btn:hover {
+.sign-in-btn:hover,
+.search-btn:hover {
   background-color: #dd3d3d;
 }
 
@@ -425,9 +459,13 @@ button:hover,
   margin-bottom: 10px;
 }
 
+.input {
+  height: 40px;
+}
+
 .input > i {
   font-size: 20px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .input > p {
@@ -440,6 +478,11 @@ input {
   font-weight: 600;
 }
 
+.option-dropdown > ul {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+}
+
 .search-btn {
   background-color: #f34646;
   height: 75px;
@@ -447,6 +490,7 @@ input {
   border-radius: 20px;
   margin-left: 25px;
   box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+  transition: background-color 0.25s linear;
 }
 
 .fa-magnifying-glass {
