@@ -21,11 +21,13 @@ window.addEventListener("load", () => {
 catArray.forEach(function (e) {
   e.addEventListener("click", function () {
     catSelected.innerText = this.innerText;
+    catSelected.classList.add("tour-selected");
   });
 });
 
 cityArray.forEach(function (e) {
   e.addEventListener("click", function () {
     citySelected.innerText = this.innerText;
+    citySelected.classList.add("city-selected");
   });
 });
