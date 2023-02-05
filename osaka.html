@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osaka | 大阪市 - Go Japan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="top" class="city-top-section osaka-top-bg">
+      <header class="page-header city-header">
+        <div class="header-container">
+          <a href="./index.html">
+            <img class="logo" src="./imagenes/gojapan color.svg" alt="" />
+          </a>
+          <nav class="nav-bar">
+            <ul class="nav-flex">
+              <li><a class="nav-links" href="./index.html">Home</a></li>
+              <li class="dropdown">
+                <a class="nav-links" href="#locations">Destinations</a>
+                <aside class="location-dropdown">
+                  <ul>
+                    <li>
+                      <a class="location-dropdown-opt" href="./tokyo.html">
+                        Tokyo
+                      </a>
+                    </li>
+                    <li>
+                      <a class="location-dropdown-opt" href="./kyoto.html">
+                        Kyoto
+                      </a>
+                    </li>
+                    <li>
+                      <a class="location-dropdown-opt" href="./osaka.html">
+                        Osaka
+                      </a>
+                    </li>
+                    <li>
+                      <a class="location-dropdown-opt" href="./nara.html">
+                        Nara
+                      </a>
+                    </li>
+                  </ul>
+                </aside>
+              </li>
+              <li><a class="nav-links" href="#about">About</a></li>
+              <li><a class="nav-links" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="sign-in-btn">Sign in</button>
+        </div>
+      </header>
+
+      <div class="title-container">
+        <h1 class="header-title city-name">Osaka, Japan</h1>
+        <h2 class="header-subtitle city-jp">大阪市, 日本</h2>
+      </div>
+    </section>
+    <main class="main-container">
+      <div class="destination-cards">
+        <figure class="destination">
+          <div class="destination-info">
+            <div class="destination-title">
+              <h4 class="destination-name">Osaka Castle</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>4.4</p>
+              </div>
+            </div>
+            <p>
+              The castle is surrounded by beautiful parks and moats, making it a
+              popular spot for picnics and walks. Visitors can go inside the
+              castle to see exhibits about its history.
+            </p>
+          </div>
+          <div class="destination-img">
+            <img src="./imagenes/osaka-castle.png" alt="" />
+          </div>
+        </figure>
+        <figure class="destination">
+          <div class="destination-info">
+            <div class="destination-title">
+              <h4 class="destination-name">Shinsekai District</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>4.5</p>
+              </div>
+            </div>
+            <p>
+              Known for its nostalgic atmosphere and street food culture. It
+              features the iconic Tsutenkaku Tower and an array of classic
+              Osaka-style dining establishments.
+            </p>
+          </div>
+          <div class="destination-img">
+            <img src="./imagenes/shinsekai.png" alt="" />
+          </div>
+        </figure>
+        <figure class="destination">
+          <div class="destination-info">
+            <div class="destination-title">
+              <h4 class="destination-name">Universal Studios Japan</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>4.5</p>
+              </div>
+            </div>
+            <p>
+              Enjoy many amusement rides, ranging from child-friendly carousels
+              to thrilling roller coasters and simulators based on popular
+              movies.
+            </p>
+          </div>
+          <div class="destination-img">
+            <img src="./imagenes/universal-japan.png" alt="" />
+          </div>
+        </figure>
+      </div>
+      <section id="about" class="about-city">
+        <div class="about-header">
+          <h2 class="section-title">
+            About <span class="highlight">Osaka</span>
+          </h2>
+          <p class="section-subtitle jp-subtitle">大阪市について</p>
+        </div>
+        <div class="about-city-text">
+          <p>
+            Osaka is a bustling metropolis in the heart of Japan's Kansai
+            region. Known for its lively atmosphere, street food culture, and
+            historic sites, Osaka is a city that showcases the country's rich
+            history and modernity. It is home to several famous landmarks,
+            including Osaka Castle, which was built in the late 16th century and
+            is now one of the city's most popular tourist attractions. Osaka is
+            also famous for its delicious cuisine, such as takoyaki (octopus
+            dumplings) and okonomiyaki (Japanese pancakes), as well as its
+            shopping and entertainment districts.
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="contact-txt">
+          <h2 class="section-title">Got a Question?</h2>
+          <h4>Send us a message</h4>
+        </div>
+        <form class="question-form" method="get" action="#top">
+          <input type="text" placeholder="Email Address" />
+          <textarea placeholder="Ask us anything you want to know"></textarea>
+          <button class="sign-in-btn submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a href="#top"
+        ><img class="logo" src="./imagenes/gojapan white.svg" alt=""
+      /></a>
+      <ul class="nav-flex">
+        <li><a class="nav-links" href="./index.html">Home</a></li>
+        <li><a class="nav-links" href="#locations">Destinations</a></li>
+        <li><a class="nav-links" href="#about">About</a></li>
+      </ul>
+      <div class="social-media">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </footer>
+  </body>
+</html>

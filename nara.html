@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nara | 奈良市 - Go Japan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="top" class="city-top-section nara-top-bg">
+      <header class="page-header city-header">
+        <div class="header-container">
+          <a href="./index.html">
+            <img class="logo" src="./imagenes/gojapan color.svg" alt="" />
+          </a>
+          <nav class="nav-bar">
+            <ul class="nav-flex">
+              <li><a class="nav-links" href="./index.html">Home</a></li>
+              <li class="dropdown">
+                <a class="nav-links" href="#locations">Destinations</a>
+                <aside class="location-dropdown">
+                  <ul>
+                    <li>
+                      <a class="location-dropdown-opt" href="./tokyo.html">
+                        Tokyo
+                      </a>
+                    </li>
+                    <li>
+                      <a class="location-dropdown-opt" href="./kyoto.html">
+                        Kyoto
+                      </a>
+                    </li>
+                    <li>
+                      <a class="location-dropdown-opt" href="./osaka.html">
+                        Osaka
+                      </a>
+                    </li>
+                    <li>
+                      <a class="location-dropdown-opt" href="./nara.html">
+                        Nara
+                      </a>
+                    </li>
+                  </ul>
+                </aside>
+              </li>
+              <li><a class="nav-links" href="#about">About</a></li>
+              <li><a class="nav-links" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="sign-in-btn">Sign in</button>
+        </div>
+      </header>
+
+      <div class="title-container">
+        <h1 class="header-title city-name">Nara, Japan</h1>
+        <h2 class="header-subtitle city-jp">奈良市, 日本</h2>
+      </div>
+    </section>
+    <main class="main-container">
+      <div class="destination-cards">
+        <figure class="destination">
+          <div class="destination-info">
+            <div class="destination-title">
+              <h4 class="destination-name">Nara Park</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>4.5</p>
+              </div>
+            </div>
+            <p>
+              Thousands of vermillion torii gates, with a network of trails
+              behind its main buildings. Leading into the wooded forest of the
+              sacred Mount Inari.At the foot of Mount Wakakusa, a large park
+              that is home to hundreds of wild Sika deer that are considered
+              sacred messengers of the gods.
+            </p>
+          </div>
+          <div class="destination-img">
+            <img src="./imagenes/nara-park.png" alt="" />
+          </div>
+        </figure>
+        <figure class="destination">
+          <div class="destination-info">
+            <div class="destination-title">
+              <h4 class="destination-name">Todai-ji Temple</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>4.6</p>
+              </div>
+            </div>
+            <p>
+              One of the largest wooden buildings in the world, home to the
+              Great Buddha Hall and the famous Daibutsu (Large Buddha Statue).
+            </p>
+          </div>
+          <div class="destination-img">
+            <img src="./imagenes/todaiji-temple.png" alt="" />
+          </div>
+        </figure>
+        <figure class="destination">
+          <div class="destination-info">
+            <div class="destination-title">
+              <h4 class="destination-name">Kasuga Taisha Shrine</h4>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <p>4.4</p>
+              </div>
+            </div>
+            <p>
+              A distinguished shrine with 3,000 auxiliary shrines across the
+              country and 3,000 donated lanterns, demonstrating how widely and
+              deeply worshipped the shrine is.
+            </p>
+          </div>
+          <div class="destination-img">
+            <img src="./imagenes/kasuga-shrine.png" alt="" />
+          </div>
+        </figure>
+      </div>
+      <section id="about" class="about-city">
+        <div class="about-header">
+          <h2 class="section-title">
+            About <span class="highlight">Nara</span>
+          </h2>
+          <p class="section-subtitle jp-subtitle">奈良について</p>
+        </div>
+        <div class="about-city-text">
+          <p>
+            Nara is a city located in the Nara Prefecture of Japan. It is a
+            historic city and was the capital of Japan from 710 to 784. Nara is
+            known for its well-preserved temples, shrines, and ruins, as well as
+            its abundance of free-ranging deer that roam the city. Some of the
+            must-visit sights in Nara include Todai-ji Temple, Kasuga-taisha
+            Shrine, and the Nara Park, where visitors can interact with the
+            city's famous deer. In addition to its historical and cultural
+            attractions, Nara also offers a number of natural scenic spots such
+            as Mount Wakakusa and the Yoshino and Omine mountain ranges.
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="contact-txt">
+          <h2 class="section-title">Got a Question?</h2>
+          <h4>Send us a message</h4>
+        </div>
+        <form class="question-form" method="get" action="#top">
+          <input type="text" placeholder="Email Address" />
+          <textarea placeholder="Ask us anything you want to know"></textarea>
+          <button class="sign-in-btn submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a href="#top"
+        ><img class="logo" src="./imagenes/gojapan white.svg" alt=""
+      /></a>
+      <ul class="nav-flex">
+        <li><a class="nav-links" href="./index.html">Home</a></li>
+        <li><a class="nav-links" href="#locations">Destinations</a></li>
+        <li><a class="nav-links" href="#about">About</a></li>
+      </ul>
+      <div class="social-media">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </footer>
+  </body>
+</html>
