@@ -26,7 +26,8 @@ button:hover,
 .location-img:hover,
 .social-media:hover,
 .about-img:hover,
-.grid-img:hover {
+.grid-img:hover,
+.destination:hover {
   cursor: pointer;
 }
 
@@ -187,8 +188,8 @@ button:hover,
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
-  margin-bottom: 950px;
+  height: 1000px;
+  margin-bottom: 350px;
 }
 
 .tokyo-top-bg {
@@ -294,7 +295,7 @@ button:hover,
 .location-dropdown {
   display: none;
   width: 200px;
-  height: 250px;
+  height: 200px;
   top: 100px;
   animation: dropdown 0.25s linear;
 }
@@ -584,9 +585,13 @@ input {
 
 /* Destinations Styling */
 
-.destination-cards {
+.about-city {
   position: absolute;
-  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
   background-color: white;
   width: 1250px;
   border-radius: 30px;
@@ -594,9 +599,14 @@ input {
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 700px;
+  top: 725px;
   box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 10px 2px;
   padding: 0 75px;
+}
+
+.destination-list {
+  width: 1200px;
+  margin-top: 100px;
 }
 
 .city-name {
@@ -624,8 +634,16 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 30px;
+  padding: 50px 75px;
+  box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 10px 2px;
+  transition: transform 0.15s linear;
+}
+
+.destination:hover {
+  transform: scale(1.005);
 }
 
 .destination-info {
@@ -661,13 +679,9 @@ input {
   height: 250px;
 }
 
-.about-city {
-  width: 1200px;
-}
-
 .about-city-text,
 .jp-subtitle {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .jp-subtitle {
@@ -679,7 +693,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 200px 0;
+  margin: 150px 0;
 }
 
 .contact-txt > h2 {
