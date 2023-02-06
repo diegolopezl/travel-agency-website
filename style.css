@@ -19,6 +19,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 button:hover,
@@ -39,6 +40,8 @@ button:hover,
 .about-img:hover {
   transform: scale(1.015);
 }
+
+/* Diego Lopez Latour - 10141760 */
 
 .grid-1,
 .grid-2,
@@ -102,6 +105,14 @@ button:hover,
 .trip-search,
 .destinations {
   position: absolute;
+}
+
+.main-container,
+.page-header,
+.about-city,
+.trip-search,
+.title-container {
+  transform: scale(0.9);
 }
 
 .main-container {
@@ -185,7 +196,7 @@ button:hover,
   height: 800px;
   width: 100%;
   padding: 0 150px;
-  margin-bottom: 250px;
+  margin-bottom: 50px;
 }
 
 .city-top-section {
@@ -195,7 +206,7 @@ button:hover,
   background-repeat: no-repeat;
   background-size: cover;
   height: 1000px;
-  margin-bottom: 350px;
+  margin-bottom: 200px;
 }
 
 .tokyo-top-bg {
@@ -560,7 +571,7 @@ input {
 
 .about {
   flex-direction: column;
-  margin-bottom: 140px;
+  margin-bottom: 40px;
 }
 
 .about-header {
@@ -892,7 +903,7 @@ input {
   }
   100% {
     background-color: transparent;
-    transform: scale(100);
+    transform: scale(500);
     opacity: 0;
   }
 }

@@ -1,3 +1,5 @@
+// Tarea de Diego Lopez Latour - 10141760
+
 // Declaracion de variables y query selectors
 
 const catOpt = document.querySelectorAll(".category-opt");
