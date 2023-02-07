@@ -15,6 +15,11 @@ body {
   min-height: 100vh;
   font-size: 14px;
   color: #342f2f;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 html {
@@ -31,13 +36,13 @@ button:hover,
 .destination:hover,
 .input:hover,
 .category-opt:hover,
-.city-opt:hover {
+.city-opt:hover,
+.input-write:hover {
   cursor: pointer;
 }
 
 .location-img:hover,
-.grid-img:hover,
-.about-img:hover {
+.grid-img:hover {
   transform: scale(1.015);
 }
 
@@ -143,6 +148,8 @@ button:hover,
   font-weight: 600;
   font-size: 48px;
   margin-bottom: 15px;
+  position: relative;
+  z-index: 0;
 }
 
 .section-subtitle {
@@ -196,7 +203,7 @@ button:hover,
   height: 800px;
   width: 100%;
   padding: 0 150px;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 .city-top-section {
@@ -335,8 +342,11 @@ button:hover,
   top: 40px;
 }
 
-.dropdown:hover > .location-dropdown,
-.search-dropdown:hover > .option-dropdown {
+.dropdown:hover > .location-dropdown {
+  display: block;
+}
+
+.active {
   display: block;
 }
 
@@ -458,10 +468,11 @@ button:hover,
   right: 0;
   top: 725px;
   box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+  z-index: 1;
 }
 
 .form {
-  width: 250px;
+  width: 245px;
 }
 
 .form-opt {
@@ -491,22 +502,28 @@ input {
 
 .option-dropdown > ul {
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 10px 2px;
 }
 
 .search-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f34646;
-  height: 75px;
-  width: 75px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  width: 125px;
+  height: 60px;
+  padding: 0 20px;
   border-radius: 20px;
-  margin-left: 25px;
   box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
   transition: background-color 0.25s linear;
 }
 
 .fa-magnifying-glass {
   color: white;
-  font-size: 34px;
+  font-size: 18px;
 }
 
 /* Image gallery grid styling */
@@ -839,7 +856,8 @@ input {
 
 /* Loader */
 
-.loader {
+.loader,
+.loader-pages {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -849,7 +867,8 @@ input {
   align-items: center;
   justify-content: center;
   background-color: white;
-  animation: hide 2.75s linear;
+  z-index: 2;
+  animation: hide 2.5s linear;
 }
 
 .circle {
@@ -857,7 +876,7 @@ input {
   width: 100px;
   background-color: #f34646;
   border-radius: 50px;
-  animation: loading 3s ease-in-out;
+  animation: loading 2.75s ease-in-out;
 }
 
 /* Keyframes */

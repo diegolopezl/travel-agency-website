@@ -75,12 +75,13 @@
       <div class="form">
         <h4 class="highlight form-opt">Tour</h4>
         <div class="search-dropdown">
-          <div class="input">
+          <div class="input category-dropdown">
             <i class="fa-solid fa-map"></i>
-            <p class="tour-choose">Choose</p>
+            <p class="tour-choose">All</p>
           </div>
-          <div class="option-dropdown">
+          <div class="option-dropdown categories">
             <ul>
+              <li class="category-opt">All</li>
               <li class="category-opt">Park</li>
               <li class="category-opt">District</li>
               <li class="category-opt">Shrine</li>
@@ -92,12 +93,13 @@
       <div class="form">
         <h4 class="highlight form-opt">City</h4>
         <div class="search-dropdown">
-          <div class="input">
+          <div class="input city-dropdown">
             <i class="fa-solid fa-location-dot"></i>
-            <p class="city-choose">Choose</p>
+            <p class="city-choose">All</p>
           </div>
-          <div class="option-dropdown">
+          <div class="option-dropdown cities">
             <ul>
+              <li class="city-opt">All</li>
               <li class="city-opt">Tokyo, JP</li>
               <li class="city-opt">Kyoto, JP</li>
               <li class="city-opt">Osaka, JP</li>
@@ -109,18 +111,24 @@
       <div class="form">
         <h4 class="highlight form-opt">Date</h4>
         <div class="input">
-          <input type="date" />
+          <input class="input-write" type="date" min="2023-02-08" />
         </div>
       </div>
       <div class="form">
         <h4 class="highlight form-opt">People</h4>
         <div class="input">
           <i class="fa-solid fa-person"></i>
-          <input type="text" placeholder="0" maxlength="2" />
+          <input
+            class="input-write"
+            type="text"
+            placeholder="0"
+            maxlength="2"
+          />
         </div>
       </div>
       <button class="search-btn">
         <i class="fa-solid fa-magnifying-glass"></i>
+        <p>Search</p>
       </button>
     </div>
     <main class="main-container">
@@ -308,6 +316,7 @@
     <div class="loader">
       <div class="circle"></div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./dropdown.js"></script>
+    <script src="./loader.js"></script>
   </body>
 </html>
