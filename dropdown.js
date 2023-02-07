@@ -44,7 +44,3 @@ cityArray.forEach(function (e) {
     cities.classList.remove("active");
   });
 });
-
-body.addEventListener("click", () => {
-  cities.classList.remove("active");
-});
